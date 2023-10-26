@@ -86,16 +86,25 @@ void right(float value){
 
 void loop() {
   //alternate forwards and backwards
-  left(100);
-  right(100);
-  delay(1000);
-  left(0);
-  right(0);
-  delay(1000);
-  left(-100);
-  right(-100);
-  delay(1000);
-  left(0);
-  right(0);
-  delay(1000);
+  // left(100);
+  // right(100);
+  // delay(1000);
+  // left(0);
+  // right(0);
+  // delay(1000);
+  // left(-100);
+  // right(-100);
+  // delay(1000);
+  // left(0);
+  // right(0);
+  // delay(1000);
+
+  //pwm test
+  for (int i = 0; i <= 255; i+=15){
+    Serial.print("Speed: ");
+    Serial.println(i);
+    left(i);
+    right(i);
+    delay(500);
+  }
 }

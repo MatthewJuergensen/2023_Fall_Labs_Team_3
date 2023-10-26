@@ -43,7 +43,7 @@ const int resolution = 8;
 int position = 0;
 
 //base speed
-float base_speed = 80;
+float base_speed = 90;
 
 //step speed
 float step_speed = 5;
